@@ -4,6 +4,7 @@ import fi.j0bbe.jmsg.Commands.MsgCommand;
 import fi.j0bbe.jmsg.Commands.ReplyCommand;
 import fi.j0bbe.jmsg.Commands.StaffChatCommand;
 import fi.j0bbe.jmsg.Listeners.StaffChatListener;
+import fi.j0bbe.jmsg.Utils.UpdateChecker;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
@@ -27,6 +28,14 @@ public final class Main extends Plugin {
         System.out.println("[JMsg] Enabling...");
 
         instance = this;
+
+        new UpdateChecker(this, 93182).getVersion(version -> {
+            if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
+                System.out.println("[JMsg] There is not a new update available.");
+            } else {
+                System.out.println("[JMsg] There is a new update available.");
+            }
+        });
 
         saveDefaultConfig();
 
