@@ -1,0 +1,4 @@
+name: JMsg
+version: ${project.version}
+main: fi.j0bbe.jmsg.Main
+author: j0bbe

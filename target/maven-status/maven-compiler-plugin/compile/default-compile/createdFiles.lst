@@ -1,0 +1,5 @@
+fi\j0bbe\jmsg\Commands\ReplyCommand.class
+fi\j0bbe\jmsg\Main.class
+fi\j0bbe\jmsg\Commands\MsgCommand.class
+fi\j0bbe\jmsg\Commands\StaffChatCommand.class
+fi\j0bbe\jmsg\Listeners\StaffChatListener.class

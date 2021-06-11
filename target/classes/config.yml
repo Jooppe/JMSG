@@ -1,0 +1,15 @@
+# Messages
+
+messages:
+  prefix: "§7[§c§lJMSG§7] §r"
+  msg-help: "§7Try: §c/msg <player> <message>"
+  trying-msg-itself: "§7You can't send messages to yourself"
+  target-offline: "§7Specific player is not online"
+  reply-help: "§7Try: §c/reply <message>"
+  nobody-to-reply: "§7You don't have anybody to answer."
+  staffchat-enabled: "§7StaffChat §aENABLED"
+  staffchat-disabled: "§7StaffChat §cDISABLED"
+
+  # Placeholders ({sender} & {receiver} & {message})
+  msg-format: "§7[§c{sender} §8§l>> §c{receiver}§7] §f{message}"
+  staffchat-format: "§c[YP] §7{sender} §8§l>> §7{message}"
